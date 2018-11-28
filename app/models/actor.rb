@@ -8,5 +8,7 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     self.shows
+    # build a method on actor that will return an array of
+    # strings in the form "#{character_name} - #{show_name}"
   end
 end
