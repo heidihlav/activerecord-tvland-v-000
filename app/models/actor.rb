@@ -4,7 +4,7 @@ class Actor < ActiveRecord::Base
 
   def full_name
     # first_part_of_name = self.first_name
-    self.actor.pluck(:first_name, :last_name)
+    self.pluck(:first_name, :last_name)
     # .join("#{self.first_name}")
     # self.last_name
   end
